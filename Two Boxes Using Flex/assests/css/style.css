@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.info-1{
+    width:49%;
+    background-color: aqua;
+    height:30vh;
+    margin-right: 20px;
+}
+.info-2{
+    width:49%;
+    background-color: orangered;
+    height: 30vh;
+}
+#test{
+    display: flex;
+    padding:50px;
+    height: 70vh;
+}
+button{
+    border: none;
+    outline:2px solid orangered;
+    margin-left: 100px;
+    padding:10px 30px;
+}
+@media (max-width:480px){
+    #test{
+        flex-direction: column;
+    }
+    
+}

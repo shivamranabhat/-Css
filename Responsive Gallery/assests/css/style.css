@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#gallery h1{
+    font-size: 50px;
+    margin-left: 15px;
+    color: blueviolet;
+}
+.image-gallery{
+    float: left;
+    width:25%;
+    padding: 0 6px;
+}
+.text p{
+    font-size: 20px;
+    text-align: center;
+    color: blueviolet;
+}
+.image img{
+    width: 100%;
+    height: auto;
+}
+/*Responsive design starts*/
+@media (max-width:700px){
+    .image-gallery{
+        width: 50%;
+    }
+}
+@media (max-width:480px){
+    .image-gallery{
+        width: 100%;
+    }
+}

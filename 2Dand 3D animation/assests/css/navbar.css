@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Nabar design starts */
+.slide{
+    position: relative;
+}
+.slide img{
+    width: 100%;
+    height:100vh;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.content{
+    position:absolute;
+    top:30%;
+    left:8%;
+}
+.content h1{
+    font-size: 70px;
+    color: #fff;
+}
+.content p{
+    font-size: 20px;
+    color:#fff;
+}
+.content #btn-primary, #btn-secondary{
+    padding:10px 20px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+}
+.content #btn-primary{
+    color:#fff;
+    background-color: rgb(90, 188, 254);
+}
+.content #btn-primary:hover{
+    color: rgb(90, 188, 254);
+    background-color: #fff;
+}
+/* Navbar design ends */

@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Freckle+Face&family=Nunito:wght@700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+#card-section{
+    padding: 50px;
+}
+.card{
+    border: 3px solid blueviolet;
+    padding:10px 20px;
+    
+}
+h1{
+    text-align: center;
+    text-shadow: 6px 4px 5px red;
+    font-size: 60px;
+    text-transform: uppercase;
+}
+.paragraph{
+    text-align: justify;
+    text-indent: 60px;
+    line-height: 2;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+}
+a{
+    text-decoration: none;
+    font-size: 30px;
+    color: blueviolet;
+    display: block;
+}
+a:hover, .fa-house:hover, .fa-facebook:hover, .fa-youtube:hover, .fa-instagram:hover{
+    color: rgb(255, 162, 0);
+}
+.fa-house{
+    color: orangered;
+}
+.fa-facebook{
+    color: blue;
+}
+.fa-youtube{
+    color: red;
+}
+.fa-instagram{
+    color:palevioletred;
+}
+ol{
+    list-style-type: lower-alpha;
+}

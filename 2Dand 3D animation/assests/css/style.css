@@ -1,0 +1,93 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.animation{
+    width:400px;
+    height:400px;
+    animation-name: new;
+    position: relative;
+    animation-duration: 3s;
+    animation-iteration-count: 10;
+    animation-direction: alternate;
+    /* animation-delay: 3s; */
+}
+
+@keyframes new{
+    0%{
+        /* background-color: #999; */
+        background: url(../uploads/Image3.jpg);
+        background-size:400px 400px;
+        background-repeat: no-repeat;
+        top:0;
+        left:0;
+    }
+    25%{
+        /* background-color:rgb(255, 149, 0) ; */
+        background: url(../uploads/Image4.jpg);
+        background-size:400px 400px;
+        background-repeat: no-repeat;
+        top:0;
+        right:0;
+    }
+    50%{
+        /* background-color: rgb(195, 43, 226); */
+        background: url(../uploads/Image5.jpg);
+        background-size:400px 400px;
+        background-repeat: no-repeat;
+        top:200px;
+        left:200px;
+    }
+    75%{
+        /* background-color: rgb(189, 255, 47); */
+        background: url(../uploads/Image6.jpg);
+        background-size:400px 400px;
+        background-repeat: no-repeat;
+        top:200px;
+        left:0px;
+    }
+    100%{
+        /* background-color: rgb(0, 132, 255); */
+        background: url(../uploads/Image7.jpeg);
+        background-size:400px 400px;
+        background-repeat: no-repeat;
+        top:0;
+        left:0;
+    }
+} 
+.transition{
+    width:90%;
+    margin:auto;
+    padding: 40px;
+    border:5px solid rgb(250, 128, 114)
+}
+.profile{
+    width:200px;
+    padding:30px;
+    color:rgb(255, 69, 0);
+    transition: width 2s;
+    transition-timing-function: 5s ease-in;
+    border:5px solid greenyellow;
+}
+button{
+    padding:10px 15px;
+    color:#fff;
+    background-color: rgb(0, 170, 255);
+    border: none;
+    border-radius: 15px;
+    transition:5s padding;
+    /* width:100px;
+    height:35px; */
+}
+button:hover{
+    /* width:90px;
+    height:40px; */
+    padding: 31px 26px;
+    background-color: rgb(0, 145, 255);
+    color: rgb(108, 52, 163);
+}
+.profile:hover{
+    width:600px;
+    color:#000;
+}

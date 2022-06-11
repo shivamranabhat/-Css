@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.paragraph {
+    text-align: justify;
+    column-count: 2;
+    column-gap: 30px;
+    column-rule-style: solid;
+}
+.paragraph h1{
+    column-span: all;
+
+}
+/* for responsive div */
+.div{
+    height:300px;
+    width: 12.5%;
+    float: left;
+    border: 2px solid rgb(0, 56, 105);
+}
+.div h1{
+    font-size: 50px;
+}
+.child-div:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.one{
+    background-color: aqua;
+}
+.two{
+    background-color: black;
+}
+.three{
+    background-color: blue;
+}
+.four{
+    background-color: blueviolet;
+}
+.five{
+    background-color: brown;
+}
+.six{
+    background-color: olive;
+}
+.seven{
+    background-color: orangered;
+}
+.eight{
+    background-color: orchid;
+}
+/* Media queries starts */
+@media screen and (max-width:767px){
+    .div{
+        width:16.65%;
+        height: 200px;
+    }
+}
+@media screen and (max-width:600px){
+    .div{
+        width:25%;
+    }
+}
+@media screen and (max-width:480px){
+    .div{
+        width:50%;
+    }
+}
+@media screen and (max-width:400px){
+    .div{
+        width:100%;
+    }
+}
+@media print{
+    .div{
+        background-color: rgb(0, 0, 0);
+        width: 25%;
+    }
+    .div h1{
+        font-size: 15px;
+        text-align: center;
+    }
+}
+.image{
+    width: 50%;
+    height:600px;
+    padding: 30px;
+}
+.image img{
+    width: 100%;
+    -webkit-box-reflect:right 20px linear-gradient(to bottom,rgba(0,0,0,0.3),rgba(0,0,0,0.3) );
+}

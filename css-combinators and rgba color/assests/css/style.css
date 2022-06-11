@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+p{
+    font-size: 20px;
+}
+/*Descendent sibling*/
+.descendant p{
+    color: olivedrab;
+}
+/*child selector*/
+.descendant > p{
+    color:red;
+}
+/*Adjacent siblings selector*/
+.descendant + p{
+    color: blue;
+}
+/*General Siblings selector*/
+.descendant ~ p{
+    color: blueviolet;
+}
+/*Pseudo elements
+.pseudo-element p::before{
+    content: url('../uploads/giphy.gif');
+}*/
+.navigation-1{
+    background-image: linear-gradient(to left,rgb(255, 128, 0) 50%,rgb(234, 234, 17),rgb(0, 247, 255));
+}
+.navigation-1, .navigation-2{
+    padding:30px;
+}
+.navigation-1 li{
+    font-size: 20px;
+}
+.navigation-2 li{
+    list-style-type: square;
+}
+.navigation-1 ul{
+    list-style-image:linear-gradient( rgb(255, 0, 0),rgb(253, 253, 2),rgb(0, 183, 255)) ;
+}
+/*
+.navigation-1 li::marker{
+    color: red;
+    list-style-image: linear-gradient(orangered,olive,skyblue);
+}*/
+.pseudo-element p::after{
+    content: url('../uploads/thinking-emoji.gif');
+}
+.pseudo-element p::first-letter{
+    font-size: 50px;
+    color: rgb(255, 53, 2);
+}
+.pseudo-element p::first-line{
+    color: rgb(2, 255, 69);
+}
